@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Award, Tree, MapPin, Phone, Users, Package, TrendingUp, ShieldCheck } from 'lucide-react';
+import { Award, Trees, MapPin, Phone, Users, Package, TrendingUp, ShieldCheck } from 'lucide-react';
 import { PHONE_DISPLAY, BUSINESS_NAME } from '../constants';
 
 export default function Home() {
   return (
     <div className="space-y-16">
-      {/* بخش Hero با گرادیان و جلوه‌ی شیشه‌ای */}
+      {/* Hero Section */}
       <section className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-green-50 via-amber-50 to-white p-8 md:p-16 shadow-lg border border-green-100/50">
         <div className="relative z-10 text-center">
           <span className="inline-block bg-green-100 text-green-800 text-xs font-bold px-4 py-1.5 rounded-full mb-4">
@@ -35,12 +35,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* المان‌های تزئینی پس‌زمینه */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-green-200/30 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-200/20 rounded-full translate-x-1/3 translate-y-1/2 blur-3xl"></div>
       </section>
 
-      {/* آمار و ارقام */}
+      {/* آمار */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
           { number: '۱۵+', label: 'سال تجربه', icon: TrendingUp },
@@ -68,7 +67,7 @@ export default function Home() {
 
         <div className="group bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition border border-green-100/50 hover:border-green-300 text-center">
           <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-200 transition">
-            <Tree className="w-8 h-8 text-amber-700" />
+            <Trees className="w-8 h-8 text-amber-700" />
           </div>
           <h3 className="text-xl font-bold text-slate-800">مستقیم از مزرعه</h3>
           <p className="text-slate-500 mt-2">بدون واسطه، تازه‌ترین محصول با قیمت مناسب و عادلانه</p>

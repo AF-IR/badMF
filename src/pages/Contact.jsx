@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, Mail, Navigation } from 'lucide-react';
+import { Phone, MapPin, Clock, Navigation } from 'lucide-react';
 import { PHONE_DISPLAY, MAP_LINK, BUSINESS_NAME } from '../constants';
 
 export default function Contact() {
@@ -53,7 +53,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* نقشه گوگل (جاسازی شده) */}
+      {/* نقشه گوگل */}
       <div className="bg-white p-4 rounded-3xl shadow-lg border border-green-100 overflow-hidden">
         <div className="relative w-full h-[400px] rounded-2xl overflow-hidden">
           <iframe
